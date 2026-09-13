@@ -218,6 +218,7 @@ type AccountEntry struct {
 	Type            string  `json:"type" jsonschema:"Account type (e.g. checking, savings, credit)"`
 	Subtype         string  `json:"subtype,omitempty" jsonschema:"Account subtype"`
 	Institution     string  `json:"institution,omitempty" jsonschema:"Financial institution name"`
+	Business        string  `json:businessEntity,omitempty,jsonschema:"Business name"`
 	IsHidden        bool    `json:"isHidden" jsonschema:"Whether account is hidden"`
 	IncludeInNetWorth bool `json:"includeInNetWorth" jsonschema:"Whether account is included in net worth calculation"`
 }
@@ -252,6 +253,12 @@ func (t *monarchTools) GetAccounts(ctx context.Context, req *mcp.CallToolRequest
 
 		if acc.Institution != nil {
 			entry.Institution = acc.Institution.Name
+		}
+
+		if acc.Business != nil {
+			entry.Business = acc.Business.Name
+		} else {
+			entry.Business = "Household"
 		}
 
 		entries = append(entries, entry)
