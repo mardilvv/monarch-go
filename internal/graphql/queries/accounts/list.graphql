@@ -51,6 +51,12 @@ query GetAccounts {
       primaryColor
       url
     }
+    businessEntity {
+      id
+      name
+      logoUrl
+      color
+    }
   }
   householdPreferences {
     id

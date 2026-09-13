@@ -4,6 +4,14 @@ import (
 	"time"
 )
 
+// New business entity that can be tied to an account
+type BusinessEntity struct {
+    ID      string  `json:"id"`
+    Name    string  `json:"name"`
+    LogoURL *string `json:"logoUrl,omitempty"`
+    Color   string  `json:"color"`
+}
+
 // Account represents a financial account
 type Account struct {
 	ID                              string              `json:"id"`
@@ -35,6 +43,7 @@ type Account struct {
 	Subtype                         *AccountSubtypeInfo `json:"subtype"`
 	Credential                      *Credential         `json:"credential"`
 	Institution                     *Institution        `json:"institution"`
+	BusinessEntity                  *BusinessEntity     `json:"businessEntity,omitempty"` // nil = household
 }
 
 // AccountTypeInfo represents account type information

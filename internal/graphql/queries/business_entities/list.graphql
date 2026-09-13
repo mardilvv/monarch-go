@@ -1,0 +1,8 @@
+query GetBusinessEntities {
+  businessEntities {
+    id
+    name
+    logoUrl
+    color
+  }
+}
