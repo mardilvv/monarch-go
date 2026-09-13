@@ -10,11 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-07-01
 
 ### Changed
-- ⚠️ **Breaking**: Module path renamed from `github.com/eshaffer321/monarchmoney-go` to
-  `github.com/eshaffer321/monarch-go/v2`, matching Monarch's rebrand from "Monarch Money" to
+- ⚠️ **Breaking**: Module path renamed from `github.com/mardilvv/monarchmoney-go` to
+  `github.com/mardilvv/monarch-go/v2`, matching Monarch's rebrand from "Monarch Money" to
   "Monarch" (the `/v2` suffix is required by Go's module versioning rules for a v2+ release).
   Consumers must update their import paths and `go get` command:
-  `go get github.com/eshaffer321/monarch-go/v2`.
+  `go get github.com/mardilvv/monarch-go/v2`.
 - Rebranded docs, comments, and the client `UserAgent` string (now `monarch-go/2.0.0`) from
   "Monarch Money" to "Monarch."
 
@@ -161,11 +161,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 All development work leading up to the v1.0.0 release.
 
-[Unreleased]: https://github.com/eshaffer321/monarch-go/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/eshaffer321/monarch-go/compare/v1.0.5...v1.1.0
-[1.0.5]: https://github.com/eshaffer321/monarch-go/compare/v1.0.4...v1.0.5
-[1.0.4]: https://github.com/eshaffer321/monarch-go/compare/v1.0.3...v1.0.4
-[1.0.3]: https://github.com/eshaffer321/monarch-go/compare/v1.0.2...v1.0.3
-[1.0.2]: https://github.com/eshaffer321/monarch-go/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/eshaffer321/monarch-go/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/eshaffer321/monarch-go/releases/tag/v1.0.0
+[Unreleased]: https://github.com/mardilvv/monarch-go/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/mardilvv/monarch-go/compare/v1.0.5...v1.1.0
+[1.0.5]: https://github.com/mardilvv/monarch-go/compare/v1.0.4...v1.0.5
+[1.0.4]: https://github.com/mardilvv/monarch-go/compare/v1.0.3...v1.0.4
+[1.0.3]: https://github.com/mardilvv/monarch-go/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/mardilvv/monarch-go/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/mardilvv/monarch-go/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/mardilvv/monarch-go/releases/tag/v1.0.0

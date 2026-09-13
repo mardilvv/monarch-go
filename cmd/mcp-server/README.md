@@ -293,10 +293,10 @@ MIT
 
 ## Contributing
 
-Issues and pull requests welcome at: https://github.com/eshaffer321/monarch-go
+Issues and pull requests welcome at: https://github.com/mardilvv/monarch-go
 
 ## Related Projects
 
-- [monarch-go](https://github.com/eshaffer321/monarch-go) - The underlying Go client library
+- [monarch-go](https://github.com/mardilvv/monarch-go) - The underlying Go client library
 - [monarchmoney (Python)](https://github.com/hammem/monarchmoney) - Original Python implementation
 - [MCP Specification](https://modelcontextprotocol.io) - Model Context Protocol documentation

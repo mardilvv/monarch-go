@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/eshaffer321/monarch-go/v2/internal/graphql"
+	"github.com/mardilvv/monarch-go/v2/internal/graphql"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

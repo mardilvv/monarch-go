@@ -22,6 +22,7 @@ bin/
 dist/
 
 # IDE specific files
+.tool-versions
 .idea/
 *.swp
 *.swo
@@ -74,7 +75,7 @@ test/integration/*.log
 
 # MCP server binary
 mcp-monarch
-cmd/mcp-server/mcp-monarch
+cmd/mcp-server/mcp-server
 
 # Test files
 test_*.go

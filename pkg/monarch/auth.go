@@ -3,8 +3,8 @@ package monarch
 import (
 	"context"
 
-	"github.com/eshaffer321/monarch-go/v2/internal/auth"
-	internalTypes "github.com/eshaffer321/monarch-go/v2/internal/types"
+	"github.com/mardilvv/monarch-go/v2/internal/auth"
+	internalTypes "github.com/mardilvv/monarch-go/v2/internal/types"
 )
 
 // authService implements the AuthService interface

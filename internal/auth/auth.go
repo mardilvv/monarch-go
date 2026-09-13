@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eshaffer321/monarch-go/v2/internal/types"
+	"github.com/mardilvv/monarch-go/v2/internal/types"
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 )

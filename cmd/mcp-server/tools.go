@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/eshaffer321/monarch-go/v2/pkg/monarch"
+	"github.com/mardilvv/monarch-go/v2/pkg/monarch"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
@@ -245,6 +245,7 @@ func (t *monarchTools) GetAccounts(ctx context.Context, req *mcp.CallToolRequest
 			Type:              string(acc.Type.Name),
 			IsHidden:          acc.IsHidden,
 			IncludeInNetWorth: acc.IncludeInNetWorth,
+			Business:          "Household",
 		}
 
 		if acc.Subtype != nil {
@@ -255,10 +256,8 @@ func (t *monarchTools) GetAccounts(ctx context.Context, req *mcp.CallToolRequest
 			entry.Institution = acc.Institution.Name
 		}
 
-		if acc.Business != nil {
-			entry.Business = acc.Business.Name
-		} else {
-			entry.Business = "Household"
+		if acc.BusinessEntity != nil {
+			entry.Business = acc.BusinessEntity.Name
 		}
 
 		entries = append(entries, entry)

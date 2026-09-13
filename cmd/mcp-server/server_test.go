@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/eshaffer321/monarch-go/v2/pkg/monarch"
+	"github.com/mardilvv/monarch-go/v2/pkg/monarch"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
